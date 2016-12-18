@@ -1,50 +1,30 @@
 
-activitylabels: contains the activity_labels.txt" file with the activity names
-features:  contains the "features.txt" file with the variable names
+activitylabels:       contains the activity_labels.txt" file with the activity names
+features:             contains the "features.txt" file with the variable names
            
-test: contains the "test/X_test.txt" file
-testlabel:  contains the "test/y_test.txt" file with the activities occuring when the data were collected
-testsubject: contains the "test/subject_test.txt" file with the information about the subject gathering the data
+test:                 contains the "test/X_test.txt" file
+testlabel:            contains the "test/y_test.txt" file with the activities occuring when the data were collected
+testsubject:          contains the "test/subject_test.txt" file with the information about the subject gathering the data
 
-train: contains the "train/X_train.txt" file
-trainlabel:  contains the "train/y_train.txt" file with the activities occuring when the data were collected
-trainsubject:  contains the "train/subject_train.txt" file with the information about the subject gathering the data
-
-
-testcomplete: combines test, testlabel and testsubject
-
-traincomplete: contains train, trainlabel and trainsubject
-
-datamerged: contains the testcomplete and traincomplete files
-- datamerged  also got properly named variables from the features file.
+train:                contains the "train/X_train.txt" file
+trainlabel:           contains the "train/y_train.txt" file with the activities occuring when the data were collected
+trainsubject:         contains the "train/subject_train.txt" file with the information about the subject gathering the data
 
 
-subsetindex: identifies the mean and std variables in the datamerged dataset that sum up the results by activities.
+testcomplete:         combines test, testlabel and testsubject
 
-subset: contains only the mean and std variables identified with the subsetindex
-- the activity variable in subset identifying the activity occuring gets proper names for the diffrent factors from the activitylabels file
+traincomplete:        contains train, trainlabel and trainsubject
+
+datamerged:           contains the testcomplete and traincomplete files
+                      - datamerged  also got properly named variables from the features file.
+
+
+subsetindex:          identifies the mean and std variables in the datamerged dataset that sum up the results by activities.
+
+subset:               contains only the mean and std variables identified with the subsetindex
+                      - the activity variable in subset identifying the activity occuring gets proper names for the diffrent
+                        factors from the activitylabels file
  
-groupedmean: sums up the average of each variable for each activity and each subject
+groupedmean:          sums up the average of each variable for each activity and each subject
 
 groupedmean is the tidy dataset that is saved as a .csv file at the end of the run_analysis.R file
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
