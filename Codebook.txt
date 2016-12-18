@@ -28,3 +28,6 @@ subset:               contains only the mean and std variables identified with t
 groupedmean:          sums up the average of each variable for each activity and each subject
 
 groupedmean is the tidy dataset that is saved as a .csv file at the end of the run_analysis.R file
+
+For a more detailed overview about the diffrent variable details in the given files please refer to the datasource website 
+                      "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
